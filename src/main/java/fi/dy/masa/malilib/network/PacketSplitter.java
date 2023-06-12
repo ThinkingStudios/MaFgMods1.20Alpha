@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 import javax.annotation.Nullable;
 import io.netty.buffer.Unpooled;
 import org.apache.commons.lang3.tuple.Pair;
+
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -14,10 +15,11 @@ import net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket;
 import net.minecraft.network.packet.s2c.play.CustomPayloadS2CPacket;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.util.Identifier;
-import fi.dy.masa.malilib.util.PacketUtils;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 
+import fi.dy.masa.malilib.util.PacketUtils;
+
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 /**
  * Network packet splitter code from QuickCarpet by skyrising
  * @author skyrising
@@ -39,7 +41,7 @@ public class PacketSplitter
         send(packet, MAX_PAYLOAD_PER_PACKET_S2C, buf -> networkHandler.sendPacket(new CustomPayloadS2CPacket(channel, buf)));
     }
 
-    @Environment(EnvType.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public static void send(ClientPlayNetworkHandler networkHandler, Identifier channel, PacketByteBuf packet)
     {
         send(packet, MAX_PAYLOAD_PER_PACKET_C2S, buf -> networkHandler.sendPacket(new CustomPayloadC2SPacket(channel, buf)));
