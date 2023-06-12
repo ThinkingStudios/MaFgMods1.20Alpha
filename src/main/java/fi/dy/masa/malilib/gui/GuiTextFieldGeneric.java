@@ -37,6 +37,7 @@ public class GuiTextFieldGeneric extends TextFieldWidget
             {
                 this.setText("");
             }
+
             this.setFocused(true);
             return true;
         }
