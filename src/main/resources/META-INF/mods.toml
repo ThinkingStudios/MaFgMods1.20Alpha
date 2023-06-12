@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[46,)"
+license = "GPLv3"
+
+[[mods]]
+modId = "malilib"
+version = "${version}"
+displayName = "MaFgLib 1.20 Alpha"
+displayURL = "https://github.com/ThinkingStudios/MaLiLib-Forge-1.20"
+logoFile = "icon.png"
+credits = "masa"
+authors = "TexTrue, ThinkingStudio"
+description = '''
+A library mod required by masa's client-side mods
+'''
+
+[[dependencies.malilib]]
+modId = "forge"
+mandatory = true
+versionRange = "[46,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.malilib]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "CLIENT"
