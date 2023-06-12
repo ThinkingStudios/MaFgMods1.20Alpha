@@ -26,10 +26,10 @@ processResources {
 	exclude '**/*.xcf'
 	exclude '**/xcf'
 
-	inputs.property "mod_version", project.mod_version
+	inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
-		expand "mod_version": project.mod_version
+	filesMatching("META-INF/mods.toml") {
+		expand "version": project.version
 	}
 }
 

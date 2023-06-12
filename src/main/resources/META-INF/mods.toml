@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[46,)"
-license = "GPLv3"
+license = "LGPLv3"
 
 [[mods]]
 modId = "malilib"
