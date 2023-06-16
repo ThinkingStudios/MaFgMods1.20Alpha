@@ -1,16 +1,13 @@
 
 # ⚠️This is based Nyan Work's port, so if you find any bugs, please do not report them to Masa and Nyan Work.⚠️
 
-# MaFgLib 1.20 Alpha
-malilib is a library mod used by masa's LiteLoader mods. It contains some common code previously
-duplicated in most of the mods, such as multi-key capable keybinds, configuration GUIs etc.
+Get MaFgLib in releases
 
-arne branch warning
-===================
-**Do not base any external work on these arne branches!!
-These are temporary features added for specific mods' needs, before the "upstream"
-(via master branch and then ported to the later MC versions) starts supporting these features
-properly. These arne branches can/will get rebased and force pushed without mercy when needed.**
+# Forgematica 1.20 Alpha
+Forgematica is a client-side Minecraft mod.
+It is more or less a re-creation of or a substitute for [Schematica](https://minecraft.curseforge.com/projects/schematica),
+for players who don't want to have Forge installed.
+For compiled builds (= downloads), see Releases
 
 Compiling
 =========
