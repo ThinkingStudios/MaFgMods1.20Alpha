@@ -1,5 +1,5 @@
 
-# ⚠️This is based Nyan Work's port, so if you find any bugs, please do not report them to Masa and Nyan Work.⚠️
+# ⚠️This is used Nyan Work's version, so if you find any bugs, please do not report them to Masa and Nyan Work.⚠️
 
 # MaFgLib 1.20 Alpha
 malilib is a library mod used by masa's LiteLoader mods. It contains some common code previously
